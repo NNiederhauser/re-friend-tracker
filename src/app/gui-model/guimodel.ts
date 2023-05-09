@@ -28,7 +28,7 @@ export class GuiModel {
                             "required": true
                         },
                         {
-                            "id": "nickName",
+                            "id": "nickname",
                             "type": "text",
                             "name": "Nickname",
                             "width": 2,
@@ -145,6 +145,13 @@ export class GuiModel {
                             "color": "yellow",
                             "page": "locationspage",
                         },
+                        {
+                            "type": "button",
+                            "name": "Group",
+                            "icon": "fa-users",
+                            "color": "green",
+                            "page": "groupspage",
+                        },
                     ]
                 },
                 {
@@ -198,6 +205,34 @@ export class GuiModel {
                             "url": "/location",
                             "form": {
                                 "form": "LocationForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "groupspage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewGroup",
+                            "icon": "fa-users",
+                            "color": "green",
+                            "width": 2,
+                            "form": {
+                                "form": "GroupForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-users",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/Group",
+                            "form": {
+                                "form": "GroupForm"
                             }
                         },
                     ]
